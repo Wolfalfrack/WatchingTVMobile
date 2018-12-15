@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Watching TV</string>
+
+    <string name="navigation_drawer_ouvrir">Ouvrir la navigation drawer</string>
+    <string name="navigation_drawer_fermer">Fermer la navigation drawer</string>
+
+    <string name="films">Films</string>
+    <string name="série">Série</string>
+    <string name="favoris">Favoris</string>
+
+    <string name="films_sortis">Films Sortis</string>
+    <string name="popular">Films Populaires</string>
+    <string name="film_venir">Film à venir</string>
+    <string name="diff_auj">Diffusion Aujourd hui</string>
+    <string name="diff_en_cours">Série en cours de diffusion</string>
+    <string name="voir_tout">Voir tout</string>
+
+    <string name="tous_film_sorti">Tous les Films sortis récemment</string>
+    <string name="film_populaire">Films Populaires</string>
+    <string name="films_a_venir">Films à venir</string>
+
+    <string name="tous_diff_aujo">Toutes les Séries sorti aujourd hui</string>
+    <string name="tous_series_en_cours">Toutes les Séries en cours</string>
+    <string name="tous_serie_populaire">Toutes les Séries populaires</string>
+
+    <string name="voir_plus">Voir plus</string>
+    <string name="detail_film">Date de sortie  \nDurée  \nBudget  \nBox-Office</string>
+    <string name="detail_serie">Démarré  \nDurée  \nPays d\'Origine    \nNetworks  </string>
+
+    <string name="no_fav_film">Pas de Films Favoris</string>
+    <string name="no_fav_serie">Pas de Séries Favories</string>
+
+    <string name="recherche_film_serie">Recherche Films,Séries</string>
+    <string name="recherche">Recherche</string>
+    <string name="pas_resultat">Pas de résultat trouvé</string>
+    <string name="film">Film</string>
+    <string name="Série">Série</string>
+
+    <string name="pas_connect">Pas de connection Internet</string>
+
+    <string name="app_quit">Appuyer une fois en plus pour quitter</string>
+
+    <string name="title_activity_film_details">FilmDetailsActivity</string>
+    <string name="title_activity_tous_films">TousFilmsActivity</string>
+    <string name="title_activity_view_tous_series">TousSeriesActivity</string>
+    <string name="title_activity_serie_details">SerieDetailsActivity</string>
+    <string name="title_activity_recherche">RechercheActivity</string>
+    <string name="MOVIE_DB_API_KEY">bfb8d0b05e92cf528ef802c947b095b0</string>
+
+</resources>
