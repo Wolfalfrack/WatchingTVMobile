@@ -18,8 +18,10 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.watchingTVmobile.watchingTV.R;
+import com.watchingTVmobile.watchingTV.fragments.ConnectionFragment;
 import com.watchingTVmobile.watchingTV.fragments.FavorisFragment;
 import com.watchingTVmobile.watchingTV.fragments.FilmsFragment;
+import com.watchingTVmobile.watchingTV.fragments.InscriptionFragment;
 import com.watchingTVmobile.watchingTV.fragments.SeriesFragment;
 import com.watchingTVmobile.watchingTV.utils.Constants;
 import com.watchingTVmobile.watchingTV.utils.NetworkConnection;
@@ -132,6 +134,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_favorites:
                 setTitle(R.string.favoris);
                 setFragment(new FavorisFragment());
+                return true;
+            case R.id.nav_connection:
+                setTitle("Connection");
+                setFragment(new ConnectionFragment());
+                return true;
+            case R.id.nav_inscription:
+                setTitle("Inscription");
+                setFragment(new InscriptionFragment());
                 return true;
         }
 

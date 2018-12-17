@@ -24,6 +24,13 @@
             android:icon="@mipmap/ic_favorite_black_24dp"
             android:iconTint="@android:color/darker_gray"
             android:title="Favoris" />
+        <item
+            android:id="@+id/nav_connection"
+            android:title="Connection"
+            />
+        <item
+            android:id="@+id/nav_inscription"
+            android:title="Inscription"/>
     </group>
 
 
