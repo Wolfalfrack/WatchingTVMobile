@@ -7,7 +7,7 @@
     tools:layout_editor_absoluteY="81dp">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editText_User"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="28dp"
@@ -35,7 +35,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editText_pas"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="216dp"
@@ -56,10 +56,10 @@
         android:layout_marginStart="34dp"
         android:text="Mot de passe"
         android:textSize="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintBottom_toTopOf="@+id/editText_pas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_User" />
 
     <Button
         android:id="@+id/buttonConnexion"

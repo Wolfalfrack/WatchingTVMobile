@@ -87,14 +87,6 @@ public class RechercheAsyncTaskLoader extends AsyncTaskLoader<RechercheResponse>
                         rechercheResultat.setOverview(result.getString("overview"));
                         rechercheResultat.setReleaseDate(result.getString("first_air_date"));
                         break;
-                    case "person":
-                        rechercheResultat.setId(result.getInt("id"));
-                        rechercheResultat.setPosterPath(result.getString("profile_path"));
-                        rechercheResultat.setName(result.getString("name"));
-                        rechercheResultat.setMediaType("person");
-                        rechercheResultat.setOverview(null);
-                        rechercheResultat.setReleaseDate(null);
-                        break;
                 }
                 rechercheResultats.add(rechercheResultat);
             }
