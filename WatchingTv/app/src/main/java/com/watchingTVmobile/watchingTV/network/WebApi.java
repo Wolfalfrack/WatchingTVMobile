@@ -1,5 +1,6 @@
 package com.watchingTVmobile.watchingTV.network;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -23,5 +24,11 @@ public class WebApi  {
     }
 
 
+    public static InputStream httpGet(String urlString) throws IOException {
+        URL url = new URL(urlString);
+        HttpURLConnection connection = (HttpURLConnection)url.openConnection();
+        connection.connect();
 
+        return connection.getInputStream();
+    }
 }

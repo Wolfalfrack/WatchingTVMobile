@@ -4,7 +4,7 @@ import android.os.AsyncTask;
 
 import com.google.gson.Gson;
 import com.watchingTVmobile.watchingTV.model.CurrentUtilisateurData;
-import com.watchingTVmobile.watchingTV.utils.Utils;
+import com.watchingTVmobile.watchingTV.network.WebApi;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -33,9 +33,9 @@ public class GetUtilisateurTask extends AsyncTask<String, String, CurrentUtilisa
 
     @Override
     protected CurrentUtilisateurData doInBackground(String... strings) {
-        String urlString = Utils.BASE_URL + "/api/Utilisateur";
+        String urlString = WebApi.BASE_URL + "/api/Utilisateur";
         try{
-            InputStream inputStream = Utils.httpGet(urlString);
+            InputStream inputStream = WebApi.httpGet(urlString);
             InputStreamReader reader = new InputStreamReader(inputStream);
             Gson gson = new Gson();
             return gson.fromJson(reader, CurrentUtilisateurData.class);
