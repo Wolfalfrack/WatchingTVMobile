@@ -27,15 +27,15 @@
         app:layout_constraintStart_toStartOf="@+id/launchMap"
         app:layout_constraintTop_toBottomOf="@+id/launchMap" />
 
-    <Button
-        android:id="@+id/sendMail"
-        android:layout_width="384dp"
-        android:layout_height="232dp"
-        android:layout_marginTop="12dp"
-        android:onClick="process"
-        android:text="Send Mail"
-        app:layout_constraintStart_toStartOf="@+id/launchMap"
-        app:layout_constraintTop_toBottomOf="@+id/launchMap" />
+    <!--<Button-->
+        <!--android:id="@+id/sendMail"-->
+        <!--android:layout_width="384dp"-->
+        <!--android:layout_height="232dp"-->
+        <!--android:layout_marginTop="12dp"-->
+        <!--android:onClick="process"-->
+        <!--android:text="Send Mail"-->
+        <!--app:layout_constraintStart_toStartOf="@+id/launchMap"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/launchMap" />-->
 
 
 </android.support.constraint.ConstraintLayout>
