@@ -1,6 +1,7 @@
 package com.watchingTVmobile.watchingTV.activities;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.NavigationView;
@@ -15,6 +16,7 @@ import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.watchingTVmobile.watchingTV.R;
@@ -22,6 +24,7 @@ import com.watchingTVmobile.watchingTV.fragments.ConnectionFragment;
 import com.watchingTVmobile.watchingTV.fragments.FavorisFragment;
 import com.watchingTVmobile.watchingTV.fragments.FilmsFragment;
 import com.watchingTVmobile.watchingTV.fragments.InscriptionFragment;
+import com.watchingTVmobile.watchingTV.fragments.IntentsFragment;
 import com.watchingTVmobile.watchingTV.fragments.SeriesFragment;
 import com.watchingTVmobile.watchingTV.utils.Constants;
 import com.watchingTVmobile.watchingTV.utils.NetworkConnection;
@@ -143,6 +146,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 setTitle("Inscription");
                 setFragment(new InscriptionFragment());
                 return true;
+            case R.id.intents:
+                setTitle("Intents");
+                setFragment(new IntentsFragment());
+                return true;
         }
 
         return false;
@@ -153,6 +160,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.main_activity_fragment_container, fragment);
         fragmentTransaction.commit();
+    }
+
+    public void process(View view){
+        Intent intent = null;
+        if(view.getId()==R.id.launchMap){
+            intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("geo:0,0?q=cinema"));
+            startActivity(intent);
+        }
+        if(view.getId()==R.id.launchMarket) {
+            intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("market://search?q=tvtime"));
+            startActivity(intent);
+        }
+//        if(view.getId()==R.id.sendMail){
+//            intent = new Intent(Intent.ACTION_VIEW);
+//            intent.setData(Uri.parse("market://search?q=tvtime"));
+//            startActivity(intent);
+//        }
     }
 
 }

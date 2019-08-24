@@ -31,6 +31,9 @@
         <item
             android:id="@+id/nav_inscription"
             android:title="Inscription"/>
+        <item
+        android:id="@+id/intents"
+            android:title="Intents"/>
     </group>
 
 

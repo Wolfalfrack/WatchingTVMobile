@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/launchMap"
+        android:layout_width="385dp"
+        android:layout_height="223dp"
+        android:onClick="process"
+        android:text="Google Map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/launchMarket"
+        android:layout_width="384dp"
+        android:layout_height="232dp"
+        android:layout_marginTop="12dp"
+        android:onClick="process"
+        android:text="Google Play Store"
+        app:layout_constraintStart_toStartOf="@+id/launchMap"
+        app:layout_constraintTop_toBottomOf="@+id/launchMap" />
+
+    <Button
+        android:id="@+id/sendMail"
+        android:layout_width="384dp"
+        android:layout_height="232dp"
+        android:layout_marginTop="12dp"
+        android:onClick="process"
+        android:text="Send Mail"
+        app:layout_constraintStart_toStartOf="@+id/launchMap"
+        app:layout_constraintTop_toBottomOf="@+id/launchMap" />
+
+
+</android.support.constraint.ConstraintLayout>
